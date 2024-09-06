@@ -25,6 +25,10 @@ namespace DesafioPOO.Models
             Console.WriteLine("Recebendo ligação...");
         }
 
+        public override string ToString()
+        {
+            return $"Meu SmartPhone {Modelo}, tem {Memoria}gb memoria ram.";
+        }
         public abstract void InstalarAplicativo(string nomeApp);
     }
 }
